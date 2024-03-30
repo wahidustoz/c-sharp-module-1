@@ -3,9 +3,9 @@
 int son;    // declaration - e'lon qilish
 son = 11;   // assignment - qiymat o'zlashtirish
 
-int sanoq = 1;      // intialization - elon qilib qiymat berish
+// int sanoq = 1;      // intialization - elon qilib qiymat berish
 
-int a, b, c;        // bir xil tipdagi bir necha o'zgaruvchini
+// int a, b, c;        // bir xil tipdagi bir necha o'zgaruvchini
                     // bitta qatorda e'lon qilsa boladi
 
 // int son = 15;       // error: o'zgaruvchi ismini qayta ishlatish mumkin emas
@@ -23,7 +23,7 @@ int a, b, c;        // bir xil tipdagi bir necha o'zgaruvchini
 // int 2024best;       // error: birinchi belgi raqam bo'lishi mumkin emas
 // int while;          // error: while kalit so'zi ishlatilgan
 
-char belgi9 = '9';
+// char belgi9 = '9';
 
 
 // casing rules - katta harf va kichik harf bilan ishlash
@@ -31,7 +31,7 @@ char belgi9 = '9';
 // propertylar, class nomlari, method nomlari PascalCase orqali yoziladi
 // constant qiymatga ega o'zgaruvchilar UPPERCASE o'rqali yoziladi
 
-int kattaSon = 12312323;
+// int kattaSon = 12312323;
 // const float PI = 3.14;
 
 // public class Student
@@ -49,11 +49,11 @@ if(true)
 
 Console.WriteLine(son);
 
-void PrintHello()
-{
-    int x = 15;
+// void PrintHello()
+// {
+//     int x = 15;
 
-    Console.WriteLine(x);
-}
+//     Console.WriteLine(x);
+// }
 
-Console.WriteLine(x);
+// Console.WriteLine(x);
