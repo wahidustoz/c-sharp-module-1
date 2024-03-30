@@ -1,7 +1,11 @@
 namespace CSharpModule.Tasks;
-class Console.System;
+using System;
 
 public class Greeting
 {
-    Console.Writline("Hello world 👋");
+    public string Greet()
+        {
+            return ("Hello World 👋");
+        }
+    
 }
