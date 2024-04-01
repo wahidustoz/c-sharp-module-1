@@ -35,6 +35,44 @@ Console.WriteLine("bu {0, 10:C3} tekst", ajoyib);
 
 
 // length
+var carModel = "Byd Song L";
+Console.WriteLine("String = {0}, Length = {1}", carModel, carModel.Length);
+
+for(int i = 0; i < carModel.Length; i ++)
+    Console.WriteLine(carModel[i]);
+
+// escape charcter & verbatim string
+
+// \ - escape character maxsus belgilarni yozish uchun ishlatiladi.
+var specialString = "U judayam \"zor\" bola";   
+Console.WriteLine(specialString);
+Console.WriteLine("olma\nanor\nnok");
+Console.WriteLine("olma\tanor\tnok");
+Console.WriteLine("olma\tanor\tnok");
+Console.WriteLine("olma\banor");
+Console.WriteLine("olma\rnok");
+Console.WriteLine("\\olma\\");
+
+// verbatim string 
+// verbatim - biror so'zni o'zgarishsiz o'shanday ko'chirib aytish yoki yozish
+
+Console.WriteLine("C:\\Windows\\System32\\calc.exe");
+Console.WriteLine(@"C:\Windows\System32\calc.exe");
+Console.WriteLine(@"Bugun \n maxsus belgisini o'rgandik!");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // string manipulation methods (ToUpper(), ToLower, Split, Replace, Substring)
 // Comparison: string.Equials, Compare, CompareTo, StringComparison(.IgnoreCase)
 // StringBuilder class
