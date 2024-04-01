@@ -1,3 +1,9 @@
+### Guideline
+1. Write your solutions in StringOperations.cs class in this folder.
+2. Run tests and check if your solution is correct.
+3. Create a PR to main branch once your tests are passing.
+
+
 #### 1. Reverse String
 Write a C# function to reverse a given string without using any built-in string reversal functions.
 
