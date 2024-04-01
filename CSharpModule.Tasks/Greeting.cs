@@ -2,5 +2,5 @@ namespace CSharpModule.Tasks;
 
 public class Greeting
 {
-    public string Greet() => throw new Exception();
+    public string Greet() => "Hello world 👋";
 }
