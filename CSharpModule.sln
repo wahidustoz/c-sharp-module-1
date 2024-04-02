@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpModule.Tasks", "CShar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpModule.Tests", "CSharpModule.Tests\CSharpModule.Tests.csproj", "{90C88B1B-C4AE-4AEF-AA7F-B118FB03FE0B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringOperations", "StringOperations\StringOperations.csproj", "{F159D5F7-E336-4209-A8DC-91AFCC5E6992}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,5 +33,9 @@ Global
 		{90C88B1B-C4AE-4AEF-AA7F-B118FB03FE0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90C88B1B-C4AE-4AEF-AA7F-B118FB03FE0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90C88B1B-C4AE-4AEF-AA7F-B118FB03FE0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F159D5F7-E336-4209-A8DC-91AFCC5E6992}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F159D5F7-E336-4209-A8DC-91AFCC5E6992}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F159D5F7-E336-4209-A8DC-91AFCC5E6992}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F159D5F7-E336-4209-A8DC-91AFCC5E6992}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
