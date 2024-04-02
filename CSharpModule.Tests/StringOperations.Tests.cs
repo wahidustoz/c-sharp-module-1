@@ -62,7 +62,7 @@ public class StringOperationsTests
     [Theory]
     [InlineData("hello", "helo")]
     [InlineData("world", "world")]
-    [InlineData("abracadabra", "cd")]
+    [InlineData("abracadabra", "abrcd")]
     [InlineData("aaaa", "a")]
     [InlineData("", "")]
     public void RemoveDuplicates_ShouldRemoveDuplicates(string input, string expected)
@@ -96,9 +96,9 @@ public class StringOperationsTests
     [Theory]
     [InlineData("hello", 'h')]
     [InlineData("abracadabra", 'c')]
-    [InlineData("aaa", 'a')]
+    [InlineData("acd", 'a')]
     [InlineData("abcdefghijklmnopqrstuvwxyz", 'a')]
-    [InlineData("aabbcc", 'a')]
+    [InlineData("aabcc", 'b')]
     public void FirstNonRepeatedCharacter_ShouldReturnCorrectCharacter(string str, char expected)
     {
         // Arrange
