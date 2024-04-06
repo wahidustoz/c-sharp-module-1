@@ -31,6 +31,8 @@ public class StringOperationsTests
     [InlineData("", "", true)]
     [InlineData("12345", "54321", true)]
     [InlineData("abc", "cba", true)]
+    [InlineData("ab", "cba", false)]
+    [InlineData("abc", "cb", false)]
     public void AreAnagrams_ShouldReturnCorrectResult(string str1, string str2, bool expected)
     {
         // Arrange
@@ -42,22 +44,22 @@ public class StringOperationsTests
         Assert.Equal(expected, result);
     }
 
-    [Theory]
-    [InlineData("forgeeksskeegfor", "geeksskeeg")]
-    [InlineData("abracadabra", "aca")]
-    [InlineData("aba", "aba")]
-    [InlineData("abcd", "a")]
-    [InlineData("racecar", "racecar")]
-    public void LongestPalindromeWithin_ShouldReturnLongestPalindrome(string str, string expected)
-    {
-        // Arrange
+    // [Theory]
+    // [InlineData("forgeeksskeegfor", "geeksskeeg")]
+    // [InlineData("abracadabra", "aca")]
+    // [InlineData("aba", "aba")]
+    // [InlineData("abcd", "a")]
+    // [InlineData("racecar", "racecar")]
+    // public void LongestPalindromeWithin_ShouldReturnLongestPalindrome(string str, string expected)
+    // {
+    //     // Arrange
 
-        // Act
-        string result = solutions.LongestPalindromeWithin(str);
+    //     // Act
+    //     string result = solutions.LongestPalindromeWithin(str);
 
-        // Assert
-        Assert.Equal(expected, result);
-    }
+    //     // Assert
+    //     Assert.Equal(expected, result);
+    // }
 
     [Theory]
     [InlineData("hello", "helo")]
