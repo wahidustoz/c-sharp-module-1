@@ -1,4 +1,4 @@
-### Guideline
+![image](https://github.com/wahidustoz/c-sharp-module-1/assets/30383473/07532bbc-81bd-4ba1-aa9d-9b88ef8a4a3a)### Guideline
 1. Write your solutions in Numbers.cs class in this folder.
 2. Run tests and check if your solution is correct.
 3. Create a PR to main branch once your tests are passing.
@@ -83,3 +83,11 @@ You are building a currency conversion tool that needs to accurately convert an 
 | Input | Output |
 | :--- | :--- |
 | `1000 12663.90` | `12663900` |
+
+```csharp
+public decimal ConvertCurrency(decimal amount, float rate) 
+{
+    // Your code here
+}
+```
+---
