@@ -13,6 +13,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringOperations", "StringO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringManipulation", "StringManipulation\StringManipulation.csproj", "{5414A128-F499-42FB-A48D-A60F0EAF232C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegerTypes", "IntegerTypes\IntegerTypes.csproj", "{D2A9D7A9-D945-468C-992F-B5DC03575B1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigIntegers", "BigIntegers\BigIntegers.csproj", "{59F61568-24AC-40CC-99FB-7525A2BBE97F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overflow", "Overflow\Overflow.csproj", "{12AA64BB-CD91-4000-A8B0-15B303870783}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,5 +49,17 @@ Global
 		{5414A128-F499-42FB-A48D-A60F0EAF232C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5414A128-F499-42FB-A48D-A60F0EAF232C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5414A128-F499-42FB-A48D-A60F0EAF232C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2A9D7A9-D945-468C-992F-B5DC03575B1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2A9D7A9-D945-468C-992F-B5DC03575B1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2A9D7A9-D945-468C-992F-B5DC03575B1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2A9D7A9-D945-468C-992F-B5DC03575B1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59F61568-24AC-40CC-99FB-7525A2BBE97F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59F61568-24AC-40CC-99FB-7525A2BBE97F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59F61568-24AC-40CC-99FB-7525A2BBE97F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59F61568-24AC-40CC-99FB-7525A2BBE97F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12AA64BB-CD91-4000-A8B0-15B303870783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12AA64BB-CD91-4000-A8B0-15B303870783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12AA64BB-CD91-4000-A8B0-15B303870783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12AA64BB-CD91-4000-A8B0-15B303870783}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
