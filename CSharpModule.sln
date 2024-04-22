@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conditional", "Conditional\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchStatements", "SwitchStatements\SwitchStatements.csproj", "{9B46D7D9-10D3-46BE-B9ED-BAD30702E432}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structure", "Structure\Structure.csproj", "{CD7B9FBF-E7BB-4976-8065-A2A5F8670740}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KichikShaxzoda", "KichikShaxzoda\KichikShaxzoda.csproj", "{F9E2FC45-215C-499C-9E0C-0C2ED69F2D68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,5 +95,13 @@ Global
 		{9B46D7D9-10D3-46BE-B9ED-BAD30702E432}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B46D7D9-10D3-46BE-B9ED-BAD30702E432}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B46D7D9-10D3-46BE-B9ED-BAD30702E432}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD7B9FBF-E7BB-4976-8065-A2A5F8670740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD7B9FBF-E7BB-4976-8065-A2A5F8670740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD7B9FBF-E7BB-4976-8065-A2A5F8670740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD7B9FBF-E7BB-4976-8065-A2A5F8670740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9E2FC45-215C-499C-9E0C-0C2ED69F2D68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9E2FC45-215C-499C-9E0C-0C2ED69F2D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9E2FC45-215C-499C-9E0C-0C2ED69F2D68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9E2FC45-215C-499C-9E0C-0C2ED69F2D68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
