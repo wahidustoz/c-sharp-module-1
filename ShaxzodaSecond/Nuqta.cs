@@ -20,6 +20,6 @@ public struct Nuqta
 
   
     
-}
+    }
 
 }
