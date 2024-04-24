@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structure", "Structure\Stru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KichikShaxzoda", "KichikShaxzoda\KichikShaxzoda.csproj", "{F9E2FC45-215C-499C-9E0C-0C2ED69F2D68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShaxzodaSecond", "ShaxzodaSecond\ShaxzodaSecond.csproj", "{A41D0076-B5DE-40D7-861F-E542A4819A09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,5 +105,9 @@ Global
 		{F9E2FC45-215C-499C-9E0C-0C2ED69F2D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9E2FC45-215C-499C-9E0C-0C2ED69F2D68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9E2FC45-215C-499C-9E0C-0C2ED69F2D68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A41D0076-B5DE-40D7-861F-E542A4819A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A41D0076-B5DE-40D7-861F-E542A4819A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A41D0076-B5DE-40D7-861F-E542A4819A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A41D0076-B5DE-40D7-861F-E542A4819A09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
