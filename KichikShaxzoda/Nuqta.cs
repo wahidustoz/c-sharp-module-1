@@ -17,4 +17,12 @@ public struct Nuqta
         var c = Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2));
         return c;
     }
+
+    public static Nuqta Parse(string str)
+    {
+        var nuqtalar = str.Split(' ', StringSplitOptions.RemoveEmptyEntries)
+            .Select(int.Parse);
+        
+        return new Nuqta(nuqtalar.First(), nuqtalar.Last());
+    }
 }
