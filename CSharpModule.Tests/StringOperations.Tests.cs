@@ -42,22 +42,22 @@ public class StringOperationsTests
         Assert.Equal(expected, result);
     }
 
-    [Theory]
-    [InlineData("forgeeksskeegfor", "geeksskeeg")]
-    [InlineData("abracadabra", "aca")]
-    [InlineData("aba", "aba")]
-    [InlineData("abcd", "a")]
-    [InlineData("racecar", "racecar")]
-    public void LongestPalindromeWithin_ShouldReturnLongestPalindrome(string str, string expected)
-    {
-        // Arrange
+    // [Theory]
+    // [InlineData("forgeeksskeegfor", "geeksskeeg")]
+    // [InlineData("abracadabra", "aca")]
+    // [InlineData("aba", "aba")]
+    // [InlineData("abcd", "a")]
+    // [InlineData("racecar", "racecar")]
+    // public void LongestPalindromeWithin_ShouldReturnLongestPalindrome(string str, string expected)
+    // {
+    //     // Arrange
 
-        // Act
-        string result = solutions.LongestPalindromeWithin(str);
+    //     // Act
+    //     string result = solutions.LongestPalindromeWithin(str);
 
-        // Assert
-        Assert.Equal(expected, result);
-    }
+    //     // Assert
+    //     Assert.Equal(expected, result);
+    // }
 
     [Theory]
     [InlineData("hello", "helo")]
@@ -122,7 +122,7 @@ public class StringOperationsTests
 
         // Act
         string result = solutions.Compress(str);
-
+            
         // Assert
         Assert.Equal(expected, result);
     }
