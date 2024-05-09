@@ -9,16 +9,8 @@ public class ArraySolutions
     /// <returns>The maximum value in the array.</returns>
     public int MaxValueInArray(int[] array)
     {
-        if(array is null or { Length: 0 })
-            throw new ArgumentException("Array cannot be empty.");
-
-        int max = array[0];
-
-        foreach(var element in array)
-            if(element > max)
-                max = element;
-
-        return max;
+        // Implementation left empty
+        throw new NotImplementedException();
     }
 
     /// <summary>
