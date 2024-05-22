@@ -29,7 +29,12 @@ public class ArraySolutions
     public int[] ReverseArray(int[] array)
     {
         // Implementation left empty
-        throw new NotImplementedException();
+        //Array.Reverse(array);
+        var result = new int[array.Length];
+        
+
+        return array;
+
     }
 
     /// <summary>
@@ -41,6 +46,8 @@ public class ArraySolutions
     {
         // Implementation left empty
         throw new NotImplementedException();
+        //
+
     }
 
     /// <summary>
