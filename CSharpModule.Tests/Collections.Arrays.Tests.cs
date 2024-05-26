@@ -98,13 +98,18 @@ public class ArrayPracticeTests
     [InlineData(new int[] { 0 }, 0)]
     [InlineData(new int[] { -5, -5, -5, -5 }, 0)]
     [InlineData(new int[] { 5, 5, 5, 5 }, 0)]
-    [InlineData(new int[] { int.MinValue, int.MaxValue }, int.MaxValue)]
+    [InlineData(new int[] { int.MinValue, int.MaxValue }, int.MinValue)]
     [InlineData(new int[] { int.MaxValue, int.MaxValue, int.MaxValue }, 0)]
-    [InlineData(new int[] { int.MinValue, int.MinValue, int.MinValue }, int.MinValue)]
-    [InlineData(new int[] { 0, int.MinValue, int.MaxValue }, 0)]
-    public void TestSumOfEvenNumbers(int[] array, int expected)
+    [InlineData(new int[] { int.MinValue, int.MinValue, int.MinValue }, typeof(OverflowException))]
+    [InlineData(new int[] { 0, int.MinValue, int.MaxValue }, int.MinValue)]
+    [InlineData(new int[] {  }, typeof(Exception))]
+    [InlineData(null, typeof(Exception))]
+    public void TestSumOfEvenNumbers(int[] array, object expected)
     {
-        Assert.Equal(expected, this.solutions.SumOfEvenNumbers(array));
+        if(expected is int exp) 
+            Assert.Equal(exp, this.solutions.SumOfEvenNumbers(array));
+        else if(expected is Type type && type.IsSubclassOf(typeof(Exception)))
+            Assert.Throws(type, () => this.solutions.SumOfEvenNumbers(array));
     }
 
     #endregion
@@ -224,6 +229,7 @@ public class ArrayPracticeTests
     [InlineData(new int[] { 1, 2, 1, 3, 5, 6, 4 }, 5)] // Peak is at index 5
     [InlineData(new int[] { 1, 2, 3 }, 2)] // Peak is at index 2
     [InlineData(new int[] { 1, 2, 1, 2, 1 }, 1)] // Peak is at index 1 or 3
+    [InlineData(new int[] { 2, 1, 3 }, 2)] // Peak is at index 0 or 2
     public void TestFindPeakElement(int[] nums, int expected)
     {
         Assert.Equal(expected, this.solutions.FindPeakElement(nums));

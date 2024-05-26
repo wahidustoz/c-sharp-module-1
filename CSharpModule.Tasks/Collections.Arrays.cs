@@ -42,8 +42,19 @@ public class ArraySolutions
     /// <returns>The sum of all even numbers in the array.</returns>
     public int SumOfEvenNumbers(int[] array)
     {
-        // Implementation left empty
-        throw new NotImplementedException();
+        if(array is null or { Length: 0 })
+            throw new Exception("Array cannot be empty.");
+            
+        int sum = 0;
+
+        foreach(int number in array)
+            if(number % 2 == 0) 
+                checked
+                {
+                    sum += number;
+                }
+        
+        return sum;
     }
 
     /// <summary>
@@ -88,8 +99,16 @@ public class ArraySolutions
     /// <returns>The missing number.</returns>
     public int FindMissingNumber(int[] nums)
     {
-        // Implementation left empty
-        throw new NotImplementedException();
+        if(nums is { Length: 1 } and [ 0 ]) 
+            return 1;
+
+        var sum = Sum(nums.Length + 1);
+        for(int i = 0; i < nums.Length; i++)
+            sum -= nums[i];
+        
+        return sum;
+
+        int Sum(int n) => n * (n - 1) / 2;
     }
 
     /// <summary>
@@ -99,8 +118,14 @@ public class ArraySolutions
     /// <returns>The index of any peak element.</returns>
     public int FindPeakElement(int[] nums)
     {
-        // Implementation left empty
-        throw new NotImplementedException();
+        if(nums is { Length: 1 }) return 0;
+
+        var peak = 0;
+        for(int i = 0; i < nums.Length; i++)
+            if(nums[peak] < nums[i])
+                peak = i;
+
+        return peak;
     }
 
     /// <summary>
