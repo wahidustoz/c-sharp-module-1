@@ -6,9 +6,19 @@ namespace TicTacToe.Pages;
 public partial class Home
 {
     // matrix ichiga bosilga X va O larni 1 va 2 sifatida saqlay
-    int[,] matrix = new int[3,3];
+    int[][] matrix = 
+    [
+        [ 0, 0, 0 ],
+        [ 0, 0, 0 ],
+        [ 0, 0, 0 ],
+    ];
+
     bool computersTurn = false;
-    bool isUserX = new Random().Next(0, 1) == 0;
+    bool isUserX = new Random().Next() % 2 == 0;
+    bool isFinished => matrix.All(row => row.All(x => x != 0)) || hasWinner;
+
+    string winner = string.Empty;
+    bool hasWinner => string.IsNullOrWhiteSpace(winner) is false;
 
     string? TransformIntoData(int data)
     => data switch 
@@ -20,16 +30,15 @@ public partial class Home
 
     void CardClicked((int Row, int Column) position)
     {
-        if (computersTurn is false && matrix[position.Row, position.Column] is 0)
+        if (computersTurn is false && matrix[position.Row][position.Column] is 0)
         {
-            matrix[position.Row, position.Column] = isUserX ? 1 : 2;
+            matrix[position.Row][position.Column] = isUserX ? 1 : 2;
+            CheckWinner();
+            
             computersTurn = true;
+            StateHasChanged();
 
             ComputerMoves().ConfigureAwait(false);
-
-            StateHasChanged();
-            if(isGameFinished()) 
-                DecideWinner();
         }
     }
 
@@ -42,34 +51,51 @@ public partial class Home
 
         for(int row = 0; row < 3; row++)
             for(int column = 0; column < 3; column++)
-                if (matrix[row, column] is 0)
+                if (matrix[row][column] is 0)
                     emptyCards.Add((row, column));
 
         if(emptyCards.Any())
         {
             var randomCard = emptyCards.OrderBy(_ => Guid.NewGuid()).First();
-            matrix[randomCard.Row, randomCard.Column] = isUserX ? 2 : 1;
+            matrix[randomCard.Row][randomCard.Column] = isUserX ? 2 : 1;
         }
         computersTurn = false;
+
+        CheckWinner();
+
         StateHasChanged();
-
-        if(isGameFinished()) 
-            DecideWinner();
     }
 
-    bool isGameFinished() 
-    {
-        var emptyCards = new List<(int Row, int Column)>();
 
+    void CheckWinner()
+    {
         for(int row = 0; row < 3; row++)
-            for(int column = 0; column < 3; column++)
-                if (matrix[row, column] is 0)
-                    emptyCards.Add((row, column));
-        
-        return emptyCards.Any() is false;
-    }
+            if(matrix[row].All(x => x == 1))
+                winner = "Winner is ❌";
+            else if(matrix[row].All(x => x == 2))
+                winner = "Winner is ⭕";
 
-    void DecideWinner()
-    {
+        for(int column = 0; column < 3; column++)
+        {
+            var columnValues = matrix.Select(row => row[column]).ToArray();
+
+            if(columnValues.All(x => x == 1))
+                winner = "Winner is ❌";
+            else if(columnValues.All(x => x == 2))
+                winner = "Winner is ⭕";
+        }
+
+        var leftDiagonal = matrix.Select((_, i) => matrix[i][i]).ToArray();
+        if(leftDiagonal.All(x => x == 1))
+            winner = "Winner is ❌";
+        else if(leftDiagonal.All(x => x == 2))
+            winner = "Winner is ⭕";
+
+        var rightDiagonal = matrix.Select((_, i) => matrix[i][2-i]).ToArray();
+        if(rightDiagonal.All(x => x == 1))
+            winner = "Winner is ❌";
+        else if(rightDiagonal.All(x => x == 2))
+            winner = "Winner is ⭕";
+
     }
 }
