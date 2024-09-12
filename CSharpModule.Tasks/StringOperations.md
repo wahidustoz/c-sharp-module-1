@@ -17,6 +17,7 @@ Write a C# function to reverse a given string without using any built-in string 
 public string Reverse(string str)
 {
     // your code here
+    
 }
 ```
 ---
